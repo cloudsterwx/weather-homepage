@@ -121,6 +121,7 @@ async function fetchWeatherAlerts(lat,lon){
   }
 }
 
+// fetches random cat fact from catfact.ninja API, displays in bottom left corner of page, updates on page load
 async function fetchCatFact(){
   try {
     const response = await fetch(`https://catfact.ninja/fact`);
@@ -132,7 +133,7 @@ async function fetchCatFact(){
   }
 }
 
-fetchCatFact().then(function(fact){
+  fetchCatFact().then(function(fact){
   const catFactElement = document.getElementById("cat-fact");
   catFactElement.innerText = `Random Cat Fact: ${fact}`;
-})
+});
