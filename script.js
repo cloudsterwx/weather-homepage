@@ -79,12 +79,13 @@ navigator.geolocation.getCurrentPosition(async function (position) {
   alertsDisplay.innerText = alerts;
    })
 
+// fetches weather data from open-meteo API
 async function fetchWeather(lat,lon){
   try {
     const response = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m&timeformat=unixtime&wind_speed_unit=mph&temperature_unit=fahrenheit&precipitation_unit=inch`);
     const data = await response.json();
-    let result = {temperature_2m, relative_humidity_2m, wind_speed_10m} = data.current;
-    return result;
+    const {temperature_2m, relative_humidity_2m, wind_speed_10m} = data.current;
+    return {temperature_2m, relative_humidity_2m, wind_speed_10m};
   } catch (error) {
     console.error("Error fetching weather data:", error);
     return null;
