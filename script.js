@@ -120,3 +120,19 @@ async function fetchWeatherAlerts(lat,lon){
     return null;
   }
 }
+
+async function fetchCatFact(){
+  try {
+    const response = await fetch(`https://catfact.ninja/fact`);
+    const data = await response.json();
+    return data.fact;
+  } catch (error) {
+    console.error("Error fetching cat fact:", error);
+    return null;
+  }
+}
+
+fetchCatFact().then(function(fact){
+  const catFactElement = document.getElementById("cat-fact");
+  catFactElement.innerText = `Random Cat Fact: ${fact}`;
+})
