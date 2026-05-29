@@ -107,8 +107,7 @@ async function fetchWeatherAlerts(lat,lon){
     .filter(f => f.properties.event !== "Hazardous Weather Outlook")
     .map(f => f.properties.event);
 
-    // assigns alerts to alerts element, with formatting based on number of alerts
-    const alertsElement = document.getElementById("alerts");
+    // formats return based on number of alerts
     if(alerts.length > 0 && alerts.length <= 2){
       return alerts.join(", ");
     } else if (alerts.length > 2){
