@@ -47,7 +47,7 @@ let minutes = Math.floor(totalSeconds / 60) % 60;
 let hours = Math.floor(totalSeconds / 3600) % 24;
 
 let timeDifference = dateObject.getTimezoneOffset() * 60;
-let localHours = (hours - Math.floor(timeDifference / 3600)) % 24;
+let localHours = ((hours - Math.floor(timeDifference / 3600)) % 24 + 24) % 24;
 
 // prevent single digit seconds, minutes, hours by adding leading zeroes to string values
 if (seconds < 10) {
