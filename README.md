@@ -6,3 +6,18 @@
 - To update weather information and cat facts, the page must be refreshed.
 - Because this project calls the api.weather.gov API, the Weather Alert data only works within the United States. Could potentially add support for other, non-US locations in the future.
 - My passion for weather made me want to learn how to call APIs for the purpose of getting real time, up-to-date weather information from APIs like api.weather.gov. This was accomplished through this program: I now know how to call such APIs.
+
+ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
+ssssssssssssssssssssssssssssssss
